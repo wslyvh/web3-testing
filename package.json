@@ -1,0 +1,30 @@
+{
+  "name": "web3-testing",
+  "description": "",
+  "version": "0.1.0",
+  "author": "wslyvh",
+  "license": "MIT",
+  "homepage": "https://github.com/wslyvh/web3-testing#readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^13.11.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wslyvh/web3-testing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wslyvh/web3-testing/issues"
+  }
+}
