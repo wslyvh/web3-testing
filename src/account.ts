@@ -20,7 +20,7 @@ export async function SendTransaction() {
   // The exact cost (in gas) to send to an Externally Owned Account (EOA)
   // The balance less exactly the txfee in wei
   let gasLimit = 21000;
-  let inWei = ethers.utils.parseEther("0.01");
+  let inWei = ethers.utils.parseEther("0.001");
   let value = inWei.sub(gasPrice.mul(gasLimit));
   console.log("VALUE", inWei.toString(), value.toString());
 
@@ -32,8 +32,8 @@ export async function SendTransaction() {
   };
   console.log("TX", tx);
 
-  // let receipt = await wallet.sendTransaction(tx);
-  // console.log("RECEIPT", receipt);
+  let receipt = await wallet.sendTransaction(tx);
+  console.log("RECEIPT", receipt);
 
   console.log("All done..");
 }
